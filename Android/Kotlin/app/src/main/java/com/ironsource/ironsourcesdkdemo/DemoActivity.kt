@@ -94,9 +94,6 @@ class DemoActivity : Activity(), RewardedVideoListener, ImpressionDataListener {
             if (IronSource.isRewardedVideoAvailable()) //show rewarded video
                 IronSource.showRewardedVideo()
         }
-        binding.rvLoadButton.setOnClickListener {
-            IronSource.loadRewardedVideo()
-        }
         binding.versionTxt.text = resources.getString(R.string.version, IronSourceUtils.getSDKVersion())
     }
 
